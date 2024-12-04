@@ -22,6 +22,9 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'  # Folosește o mașină virtuală Ubuntu pentru a construi proiectul
+  name: Default  # Asigură-te că acest pool este setat corect
+  demands:
+    - agent.name -equals Default
 
 steps:
 - task: Maven@3
