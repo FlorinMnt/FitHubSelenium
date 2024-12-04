@@ -9,10 +9,10 @@ import com.fithub.fithub_test.Utils.BasePage;
 public class LoginPage extends BasePage {
 
     // search elements
-    @FindBy(xpath = "//*[@id = 'email']")//cautare cu xpath pentru a cauta dupa id
+    @FindBy(xpath = "//*[@type = 'email']")//cautare cu xpath pentru a cauta dupa id
     WebElement emailTextBox;
 
-    @FindBy(id = "password")
+    @FindBy(xpath = "//*[@type = 'password']")
     WebElement passwordTextBox;
 
     @FindBy(xpath = "//*[@type='submit']")
